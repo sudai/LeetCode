@@ -1,0 +1,49 @@
+/*
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have exactly one solution.
+
+This is the  simplest way, should have more effective ways to solve the problem.
+
+*/
+
+public class sumNums {
+	public int[] twoSum(int[] nums, int target) {
+        int[] arr = new int[2];
+       
+        for(int i=0;i<nums.length-1; i++){
+            for(int j=i+1; j<nums.length; j++){
+                
+                if(nums[i]+nums[j]==target){
+                    arr[0]=i;
+                    arr[1]=j;
+                    return arr;
+                }
+                    
+            }
+        }
+        
+        return arr;
+    }
+    
+}
+
+
+public class main {
+	
+	
+
+	public static void main(String[] args) {
+		
+		 int[] numbers = { 0, 4, 2, 7 };  
+	        int target = 9;  
+	        int[] result = new sumNums().twoSum(numbers, target);  
+	        for (int i = 0; i < result.length; i++) {  
+	            System.out.println(result[i]);  
+	        }  
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
