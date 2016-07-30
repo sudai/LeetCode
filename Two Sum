@@ -3,9 +3,10 @@ Given an array of integers, return indices of the two numbers such that they add
 
 You may assume that each input would have exactly one solution.
 
-This is the  simplest way, should have more effective ways to solve the problem.
-
 */
+
+//This is the  simplest way, should have more effective ways to solve the problem.
+//I can use hashmap to get O(n) on time.
 
 public class sumNums {
 	public int[] twoSum(int[] nums, int target) {
